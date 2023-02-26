@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <link rel="stylesheet" href="css/busses,btns.css">
+    <link rel="stylesheet" href="css/winp.css" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.0">
+    <style>
+    	/* Base styles for all screens */
+body {
+    zoom: 1;
+}
+
+/* Styles for screens between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        zoom: 1.5;
+    }
+}
+
+/* Styles for screens between 1024px and 1440px */
+@media (min-width: 1024px) and (max-width: 1440px) {
+    body {
+        zoom: 2;
+    }
+}
+
+/* Styles for screens larger than 1440px */
+@media (min-width: 1440px) {
+    body {
+        zoom: 2.5;
+    }
+}
+
+	</style>
+</head>
+<body id="body"></body>
+<script src="js/script.js"></script>
+<script type="text/javascript" src="js/winp.js"></script>
+</html>
