@@ -1,0 +1,77 @@
+<!doctaype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus Ludo</title>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+  <!-- CSS for slider mechanism  -->
+  <link rel="stylesheet" href="css/slider.css" type="text/css" media="all" />
+  <!-- CSS for first slide number of players -->
+  <link rel="stylesheet" href="css/pno.css" type="text/css" media="all" />
+  <!-- CSS for second slide names of the players -->
+  <link rel="stylesheet" href="css/pnames.css" type="text/css" media="all" />
+  <!-- CSS for the third slide color of the players -->
+  <link rel="stylesheet" href="css/pcolors.css" type="text/css" media="all" />
+  <!-- CSS for the main game -->
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/winp.css" type="text/css" media="all" />
+</head>
+<body id="body">
+    <header>
+        <h1>Ludo Bus</h1>
+    </header>
+  <div class="slider-container">
+  <div class="slider">
+    <!-- slide 1 -->
+    <div class="slide">
+        <div class="player-select-container">
+  <div class="player-select-wrapper">
+    <div class="player-select-label">Select the number of players:</div>
+    <div class="player-select-options">
+      <div class="player-select-option" data-value="2">2</div>
+      <div class="player-select-option" data-value="3">3</div>
+      <div class="player-select-option" data-value="4">4</div>
+      <div class="player-select-option" data-value="5">5</div>
+      <div class="player-select-option" data-value="6">6</div>
+      <div class="player-select-option" data-value="7">7</div>
+      <div class="player-select-option" data-value="8">8</div>
+    </div>
+  </div>
+</div>
+<button class="next-btn">Next</button>
+</div>
+    <!-- slide 2 -->
+    <div class="slide">
+        <form id="pname">
+            
+        </form>
+    </div>
+    <!-- slide 3 -->
+    <div class="slide">
+        <form id="pcolor">
+            
+        </form>
+    </div>
+  </div>
+</div>
+</body>
+<!-- JS for slider mechanism  -->
+<script src="js/slider.js"></script>
+<!-- JS for first slide number of players -->
+<script src="js/pno.js"></script>
+<!-- JS for second slide names of the players -->
+<script src="js/pnames.js"></script>
+<!-- JS for the third slide color of the players -->
+<script src="js/pcolors.js"></script>
+<!-- JS for the main game -->
+<script src="js/script.js"></script>
+<script src="js/winp.js"></script>
+</html>

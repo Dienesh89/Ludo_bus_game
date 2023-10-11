@@ -1,0 +1,211 @@
+html,body{
+    scroll-behavior: smooth;
+}
+
+html{
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5%;
+    overflow-x: hidden;
+    margin: auto;
+    box-shadow: 0px 40px 20px 0px rgba(0,0,0,0.2)
+}
+
+@font-face {
+  font-family: FiraCode-Regular;
+  src: url(../assets/font/FiraCode-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    text-align: center;
+    padding: 5px 10px;
+    font-family: FiraCode-Regular;
+    color: white;
+    background: yellowgreen;
+    margin-bottom: 10px;
+}
+/* bus */
+.bus{
+    width: 10rem;
+    height: 3.5rem;
+    background-color: yellowgreen;
+    padding: 0.2rem;
+    border-radius: 8px;
+    position: relative;
+    left:-40%;
+    top: 0.5rem;
+    z-index: 2;
+    /*animation:bus 5s linear infinite;*/
+    transition: all 2s ease-in-out;
+}
+.windows{
+    display: flex;
+    justify-content: space-between;
+}
+.window{
+    width: 12%;
+    height: 1.5rem;
+    background-color: black;
+    border-radius: 5px;
+}
+.first-window{
+    border-top-right-radius: 16px;
+}
+.player-name{
+    text-align: center;
+    padding: 5%;
+    font-family: FiraCode-Regular;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 3px;
+}
+.wheel{
+    width: 15%;
+    height: 1.5rem;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dotted white;
+}
+.wheel-animation{
+    /* animation: wheel 2s linear; */
+    animation-name:wheel ;
+    animation-duration: 2s;
+  animation-iteration-count: 8;
+}
+.wheel1{
+    position: absolute;
+    left: 5%;
+    top: 90%;
+}
+.wheel2{
+    position: absolute;
+    right: 5%;
+    top: 90%;
+}
+.rim{
+    font-size: xx-large;
+    color: white;
+    font-family:Roboto;
+}
+/* bus end */
+
+/* wheels animation */
+@keyframes wheel{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* bus animation */
+@keyframes bus{
+    0%{
+        left: -40%;
+    }
+    100%{
+        left: 94%;
+    }
+}
+
+/* road */
+.road{
+    height: 3rem;
+    background-color: black;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+.mark-cont{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    position: absolute;
+    top: 50%;
+}
+.mark{
+    width: 12%;
+    height: 4px;
+    background-color: white;
+    border-radius: 3px;
+}
+/* player info */
+.info{
+    text-align: center;
+    font-family: FiraCode-Regular;
+}
+.target{
+    margin-top: 5%;
+}
+.current{
+    margin-bottom: 5%;
+    margin-right: 2%;
+}
+/* dice roll */
+#dice-cont{
+    padding: 0 14%;
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s;
+    border-radius:10px;
+    overflow:hidden;
+    margin-bottom:3rem;
+}
+.dice-btn{
+    border: none;
+    background-color: red;
+    padding: 2% 8%;
+    font-size: large;
+    font-weight: 700;
+    color: white;
+    border-radius: 8px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    margin-top: 2%;
+    text-align: center;
+    cursor: pointer;
+    font-family: FiraCode-Regular;
+}
+.dice-roll{
+    transition: all 1s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.6); /*any color you want*/
+}
+.dice-roll img{
+    filter: drop-shadow(2px 2px 2px #222); 
+}
+/* roll dice */
+#rolldice{
+    display: flex;
+    justify-content: center;
+    margin-bottom:3rem;
+}
+#rolldice div{
+    width: 4rem;
+    height: 4rem;   
+    background-color: #E6E6E6;
+    border-radius:10px;
+}
+#rolldice div img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.1s;
+}
+.current *{
+    letter-spacing: 10px;
+}

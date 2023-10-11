@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    width:360px;
+}
+:root{}
+*{
+	font-family: Purple_smile;
+}
+@font-face {
+  font-family: Purple_smile;
+  src: url(../assets/font/Purple_smile.ttf);
+}
+.trophy-container{
+    height: 6rem;
+}
+.trophy{
+    height: 100%;
+    width: 6rem;
+    background-image: url('../assets/img/trophy.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rank{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -10%;
+    color: #E3A11A;
+}
+.rank p{
+    font-family: Purple_smile;
+    font-size: xx-large;
+}
+.rank .st{
+    font-size: small;
+}
+.neon {
+    text-shadow:
+      0 0 10px var(--neon),
+      0 0 100px var(--neon)
+    ;
+    color: var(--neon);
+    font-family: Purple_smile;
+    font-size: xx-large;
+    text-align: center;
+}
+
